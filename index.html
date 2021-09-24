@@ -7,50 +7,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>レスポンシブデザイン</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Indie+Flower&family=Shippori+Mincho&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <div class="flex__item wrap">
-    <div class="practice__card">
-      <div class="card__img">
-        <img src="img/card.jpg" alt="">
-      </div>
-      <div class="card__content">
-        <div class="card__cat">カテゴリー</div>
-        <h2 class="card__ttl">今日の朝ごはんは卵と肉を合わせたバランスの良いメニューです。</h2>
-        <div class="tag">
-          <p class="card__tag">#朝ごはん</p>
-          <p class="card__date">2021/01/01</p>
-        </div>
-      </div>
-    </div>
-    <div class="practice__card">
-      <div class="card__img">
-        <img src="img/card.jpg" alt="">
-      </div>
-      <div class="card__content">
-        <div class="card__cat">カテゴリー</div>
-        <h2 class="card__ttl">今日の朝ごはんは卵と肉を合わせたバランスの良いメニューです。</h2>
-        <div class="tag">
-          <p class="card__tag">#朝ごはん</p>
-          <p class="card__date">2021/01/01</p>
-        </div>
+  <header class="header">
+    <h1 class="header-ttl">
+      <a href="index.html">
+        Tecool
+      </a>
+    </h1>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item"><a href="index.html">Item</a></li>
+        <li class="header-nav-item"><a href="service.html">Topics</a></li>
+        <li class="header-nav-item"><a href="news.html">Style</a></li>
+        <li class="header-nav-item"><a href="blog.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="firstview">
+      <img class="firstview__img" src="img/firstview.png" alt="">
+      <div class="title">
+        <h1 class="title-wrap">呼び覚ませ</h1>
+        <h3 class="spring">2021 Spring & Summer</h3>
       </div>
     </div>
-    <div class="practice__card">
-      <div class="card__img">
-        <img src="img/card.jpg" alt="">
+
+    <div class="wrap">
+      <div class="item">
+        <img src="img/styles-img1.png" alt="カード1">
       </div>
-      <div class="card__content">
-        <div class="card__cat">カテゴリー</div>
-        <h2 class="card__ttl">今日の朝ごはんは卵と肉を合わせたバランスの良いメニューです。</h2>
-        <div class="tag">
-          <p class="card__tag">#朝ごはん</p>
-          <p class="card__date">2021/10/20</p>
-        </div>
+      <div class="item">
+        <img src="img/styles-img2.png" alt="カード2">
+      </div>
+      <div class="item">
+        <img src="img/styles-img3.png" alt="カード3">
+      </div>
+      <div class="item">
+        <img src="img/styles-img4.png" alt="カード4">
+      </div>
+      <div class="item">
+        <img src="img/styles-img5.png" alt="カード5">
+      </div>
+      <div class="item">
+        <img src="img/styles-img6.png" alt="カード6">
       </div>
     </div>
-  </div>
+  </main>
+  <footer class="footer">
+    <small class="copyrigth">&copy; 2021 estra,inc</small>
+  </footer>
 </body>
 
 </html>

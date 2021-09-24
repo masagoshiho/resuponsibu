@@ -1,0 +1,84 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  background-color: #000;
+  color: #fff;
+}
+.header-ttl {
+  font-family: 'Shippori Mincho';
+  font-size: 24px;
+  width: 80px;
+}
+.header-nav-list {
+  display: flex;
+  font-family: 'Shippori Mincho';
+  font-weight: bold;
+  list-style: none;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.firstview {
+  position: relative;
+  top: 50%;
+}
+
+.firstview__img {
+background-image: url("../img/firstview.png");
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+}
+
+.title-wrap {
+ font-family: 'Shippori Mincho';
+ color: #fff; 
+ font-size: 60px;
+ position: absolute;
+ top: 30%;
+ left: 20%;
+}
+
+.spring {
+ font-family: 'Shippori Mincho';
+ color: #fff;
+ font-size: 22px;
+ position: absolute;
+ top: 45%;
+ left: 22%;
+}
+
+.wrap {
+  column-count: 3;
+  width: 90%;
+  margin: 0 auto
+}
+.item{
+  break-inside: avoid;
+  text-align: center;
+}
+.item img{
+  width: 100%;
+  margin-top: 30px;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+  display: flex;
+  color: #fff;
+  font-family: 'Shippori Mincho';
+  text-align: center;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #fff;
+}
