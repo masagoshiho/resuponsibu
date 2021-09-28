@@ -1,3 +1,13 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  line-height: 1.7;
+  font-family: "Shippori Mincho", serif;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -54,6 +64,32 @@ width: 100%;
  left: 22%;
 }
 
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.topics__item {
+  width: 33.3333%;
+  position: relative;
+}
+
+
+.topics__item-content {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 20px;
+}
+
+
+.topics__item-ttl {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 .wrap {
   column-count: 3;
   width: 90%;
@@ -66,6 +102,64 @@ width: 100%;
 .item img{
   width: 100%;
   margin-top: 30px;
+}
+
+.about {
+  padding: 60px 0;
+  background: #000;
+}
+
+
+.about__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.about__img {
+  width: 40%;
+}
+
+
+.about__content {
+  width: 50%;
+  color: #fff;
+}
+
+
+.about__content-subttl {
+  font-size: 24px;
+}
+
+
+.about__content-ttl {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+
+.new-line {
+  margin-bottom: 20px;
+  display: block;
+}
+
+
+.about__content-txt {
+  margin-bottom: 25px;
+}
+
+
+.about-btn {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 15px 40px;
+  display: inline-block;
 }
 
 .footer {
@@ -81,4 +175,54 @@ width: 100%;
 .copyright {
   font-size: 14px;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .tab {
+    display: block;
+  }
+
+
+  .pc {
+    display: none;
+  }
+
+
+  .topics__item-ttl {
+    font-size: 20px;
+  }
+  .styles-wrap__item {
+    width: 49%;
+  }
+  .about__content {
+    width: 58%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .firstview {
+    background: url(../img/firstview-sp.png) no-repeat;
+    background-size: cover;
+  }
+  .firstview__content {
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .topics__item {
+    width: 100%;
+  }
+
+
+  .about__img,
+  .about__content {
+    width: 100%;
+  }
+
+
+  .about__content {
+    text-align: center;
+    margin-top: 40px;
+  }
 }
